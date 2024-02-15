@@ -31,16 +31,17 @@ public class MonitorService : IHostedService
 
         //Recorrente (roda em um intevalo de tempo)
         RecurringJob.AddOrUpdate("RecurringJob",() => PrintRecurringJob($"Recurring",null), MinuteInterval(5));
+      //  RecurringJob.AddOrUpdate("RecurringJob",() => PrintRecurringJob($"Recurring",null), Cron.Hourly);
     }
     
     //Redirecionando msg do console para o dashbord do hangFire
-    public void Print(string message, PerformContext? context)
+    public void Print(string message, PerformContext context)
     {
         context.WriteLine(message);
     }
 
     //Criando rotinas com thread para monstrar tempo de execução no dashboard
-    public void PrintRecurringJob(string message, PerformContext? context)
+    public void PrintRecurringJob(string message, PerformContext context)
     {
         context.WriteLine("Inicioo do Processo");
         Thread.Sleep(TimeSpan.FromSeconds(5));
