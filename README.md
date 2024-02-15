@@ -4,7 +4,7 @@ Implementando HangFire com net 9 + redis
 
 
 HangFire e uma biblioteca voltada para automatização de rotinas/processos.
-neste projeto implementamos algumas funçoes de teste e um dashboard UI para facilitar a visualização dos processos e status dos processos.
+Neste projeto implementamos algumas funçoes de teste e um dashboard UI para facilitar a visualização dos processos e status dos processos.
 
 # obs
 
