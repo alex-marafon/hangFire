@@ -1,6 +1,6 @@
 # hangFire
 
-Implementando HangFire com net 9 + redis
+Implementando HangFire com net 8 + redis
 
 
 HangFire e uma biblioteca voltada para automatização de rotinas/processos.
